@@ -16,8 +16,7 @@ describe('Code duplication bad practice - repetitive tests', () => {
   })
 
   it('searches for "reactjs"', () => {
-    cy.get('@searchField')
-      .type('reactjs{enter}')
+    cy.search('reactjs')
 
     cy.wait('@getStories')
 
@@ -26,8 +25,7 @@ describe('Code duplication bad practice - repetitive tests', () => {
   })
 
   it('searches for "vuejs"', () => {
-    cy.get('@searchField')
-      .type('vuejs{enter}')
+    cy.search('vuejs')
 
     cy.wait('@getStories')
 
