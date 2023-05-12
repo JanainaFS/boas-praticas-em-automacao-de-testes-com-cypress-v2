@@ -15,7 +15,7 @@ describe('Code duplication bad practice - repetitive tests', () => {
       .clear()
   })
 
-  const termsToSearchFor = ['reactjs', 'vuejs']
+  const termsToSearchFor = ['reactjs', 'vuejs', 'angularjs']
 
   termsToSearchFor.forEach(term => {
     it(`searches for "${term}"`, () => {
